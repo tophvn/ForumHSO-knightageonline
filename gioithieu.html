@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN"><html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,maximum-scale=1,user-scalable=no"/>
+        <title>Thời Đại Hiệp Sĩ - Game Hiệp Sĩ - Hiệp Sĩ Mobile</title>
+        <link rel="stylesheet" href="css/template.css" type="text/css" />		
+		<link rel="shortcut icon" href='/images/fav.ico' type="image/x-icon" />
+		<link rel="apple-touch-icon" href="/images/appleicon.png" />
+		<meta name="description" content="Website chính thức của Thời Đại Hiệp Sĩ - Game nhập vai Việt Nam được yêu thích nhất trên Mobile!"/>
+		<meta name="keywords" content="Thời Đại Hiệp Sĩ, Hiep Si Online, Hiệp Sĩ Mobile, Hiệp Sĩ Điện Thoại, hiep si dien thoai, game hiep si online, game hiep si mobile" />
+    </head>   
+	<style>
+		#backTop {
+			position: fixed;
+			bottom: 60px;
+			right: 2px;
+			z-index: 9999;
+			text-align: center;
+			text-transform: uppercase;
+			cursor: pointer;
+			text-decoration: none;
+			transition: opacity 0.2s ease-out;
+			opacity: 0;
+			border: 1px solid #797979;
+			border:none;
+		}
+
+		#backTop span {
+			color: #453c3c;
+			display: block;
+			font-weight: 900;
+		}
+
+		#backTopimg:hover{
+			opacity: 0.8 !important;
+		}
+
+		#backTop.show {
+			opacity: 1;
+		}
+
+		@media (max-width: 500px) {
+			#backTop.show {
+				display: block;
+			}
+		}
+
+		.snowEffect {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    overflow: hidden;
+    pointer-events:none; /*Không có dòng này là ko click đc các phần tử khác*/
+}
+#snowcanvas{
+    position: fixed;
+    z-index: 0;
+}
+</style>
+    <body>
+	<div class="snowEffect">
+    <canvas id="snowcanvas" height="100%" width="100%"></canvas>
+				<div style="height: 100%;position: absolute;left:53%">
+				<marquee scrolldelay=140 style="height: 118%;" direction="up"  onmouseover="this.stop();" onmouseout="this.start();">
+					<img src="https://ngocrongonline.com/images/den12.png" style="width: 50%;" alt="">
+				</marquee>
+			</div>
+					<div style="height: 100%;position: absolute;left:40%">
+				<marquee scrolldelay=127 style="height: 126%;" direction="up"  onmouseover="this.stop();" onmouseout="this.start();">
+					<img src="https://ngocrongonline.com/images/den12.png" style="width: 50%;" alt="">
+				</marquee>
+			</div>
+					<div style="height: 100%;position: absolute;left:40%">
+				<marquee scrolldelay=193 style="height: 109%;" direction="up"  onmouseover="this.stop();" onmouseout="this.start();">
+					<img src="https://ngocrongonline.com/images/den12.png" style="width: 50%;" alt="">
+				</marquee>
+			</div>
+					<div style="height: 100%;position: absolute;left:71%">
+				<marquee scrolldelay=17 style="height: 125%;" direction="up"  onmouseover="this.stop();" onmouseout="this.start();">
+					<img src="https://ngocrongonline.com/images/den12.png" style="width: 50%;" alt="">
+				</marquee>
+			</div>
+					<div style="height: 100%;position: absolute;left:20%">
+				<marquee scrolldelay=101 style="height: 110%;" direction="up"  onmouseover="this.stop();" onmouseout="this.start();">
+					<img src="https://ngocrongonline.com/images/den12.png" style="width: 50%;" alt="">
+				</marquee>
+			</div>
+					<div style="height: 100%;position: absolute;left:90%">
+				<marquee scrolldelay=68 style="height: 120%;" direction="up"  onmouseover="this.stop();" onmouseout="this.start();">
+					<img src="https://ngocrongonline.com/images/den12.png" style="width: 50%;" alt="">
+				</marquee>
+			</div>
+					<div style="height: 100%;position: absolute;left:36%">
+				<marquee scrolldelay=15 style="height: 111%;" direction="up"  onmouseover="this.stop();" onmouseout="this.start();">
+					<img src="https://ngocrongonline.com/images/den12.png" style="width: 50%;" alt="">
+				</marquee>
+			</div>
+					<div style="height: 100%;position: absolute;left:35%">
+				<marquee scrolldelay=186 style="height: 107%;" direction="up"  onmouseover="this.stop();" onmouseout="this.start();">
+					<img src="https://ngocrongonline.com/images/den12.png" style="width: 50%;" alt="">
+				</marquee>
+			</div>
+					<div style="height: 100%;position: absolute;left:36%">
+				<marquee scrolldelay=140 style="height: 129%;" direction="up"  onmouseover="this.stop();" onmouseout="this.start();">
+					<img src="https://ngocrongonline.com/images/den12.png" style="width: 50%;" alt="">
+				</marquee>
+			</div>
+					<div style="height: 100%;position: absolute;left:77%">
+				<marquee scrolldelay=173 style="height: 106%;" direction="up"  onmouseover="this.stop();" onmouseout="this.start();">
+					<img src="https://ngocrongonline.com/images/den12.png" style="width: 50%;" alt="">
+				</marquee>
+			</div>
+					<div style="height: 100%;position: absolute;left:60%">
+				<marquee scrolldelay=137 style="height: 102%;" direction="up"  onmouseover="this.stop();" onmouseout="this.start();">
+					<img src="https://ngocrongonline.com/images/den12.png" style="width: 50%;" alt="">
+				</marquee>
+			</div>
+					<div style="height: 100%;position: absolute;left:75%">
+				<marquee scrolldelay=13 style="height: 119%;" direction="up"  onmouseover="this.stop();" onmouseout="this.start();">
+					<img src="https://ngocrongonline.com/images/den12.png" style="width: 50%;" alt="">
+				</marquee>
+			</div>
+					<div style="height: 100%;position: absolute;left:26%">
+				<marquee scrolldelay=42 style="height: 119%;" direction="up"  onmouseover="this.stop();" onmouseout="this.start();">
+					<img src="https://ngocrongonline.com/images/den12.png" style="width: 50%;" alt="">
+				</marquee>
+			</div>
+					<div style="height: 100%;position: absolute;left:47%">
+				<marquee scrolldelay=13 style="height: 126%;" direction="up"  onmouseover="this.stop();" onmouseout="this.start();">
+					<img src="https://ngocrongonline.com/images/den12.png" style="width: 50%;" alt="">
+				</marquee>
+			</div>
+					<div style="height: 100%;position: absolute;left:74%">
+				<marquee scrolldelay=152 style="height: 103%;" direction="up"  onmouseover="this.stop();" onmouseout="this.start();">
+					<img src="https://ngocrongonline.com/images/den12.png" style="width: 50%;" alt="">
+				</marquee>
+			</div>
+		</div>
+<a href="#" id="backTop"><img id='backTopimg' src='https://avatarbum.teamobi.com/img/bum/download/uptop.gif' alt='top'/> </a>
+
+        <div class="body_body">
+			<div style="line-height: 10px;
+    font-size: 10px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    color: #424242;
+    margin-top: -6px;">
+			<img height=12 src="18.png" style="vertical-align: middle;"/> 
+			<span style="vertical-align: middle;">Dành cho người chơi trên 18 tuổi. Chơi quá 180 phút mỗi ngày sẽ hại sức khỏe.
+			</span>
+			</div>
+            <div class="left_top"></div><div class="bg_top"><div class="right_top"></div></div>
+            <div class="body-content">
+            	<div class="bg-content2">
+                <div class="a" align="center"><a href="http://knightageonline.com/"><img src="images/logo_V_158.png" /></a><br>
+				<!--<span style="color:#fff;font-size:14px;">Beta Test</span>-->
+				</div>
+                <div id="top">
+                    <div class="link-more">	
+                        <div class="h" align="center">
+                            <!--<div style="color: #032E58;margin-top:-8px;margin-bottom:4px;">
+							<center> <b>Mạng xã hội cho điện thoại di động</b></center> 
+							</div>-->
+							<div class="bg_noel"></div>
+							<div class="menu2" style="background: #561d00;">
+                            <table width="100%" border="0" cellspacing="4	">
+                                <tr class="menu">		
+									<td ><a href="index.html">Trang Chủ</a></td>
+									<td id="selected"><a href="gioithieu.html">Giới Thiệu</a></td>
+                                    <td ><a href="#">Diễn Đàn</a></td> 
+                                </tr>
+                            </table>
+							</div>
+																<div class="bg-content">
+										<p class="p1"><span class="s1"><strong>GIỚI THIỆU CHUNG</strong></span></p>
+<p class="p1"><span class="s1">Trong thế giới của Thời Đại Hiệp Sĩ, bất kỳ ai lớn l&ecirc;n đều bắt đầu cuộc phi&ecirc;u lưu của ri&ecirc;ng m&igrave;nh như đi đến những v&ugrave;ng đất chưa được kh&aacute;m ph&aacute;, chiến đấu chống lại những thế lực xấu xa. Họ được gọi l&agrave; những Hiệp Sĩ của tự do, v&agrave; bạn sẽ l&agrave; một trong số đ&oacute;.</span></p>
+<p class="p1"><span class="s1">L&agrave; một game nhập vai trực tuyến &ndash; Thời Đại Hiệp Sĩ mang đến cốt truyện hấp dẫn v&agrave; vui nhộn, thế giới rộng lớn thỏa sức kh&aacute;m ph&aacute;, hệ thống chiến đấu &ndash; vật phẩm đa dạng c&ugrave;ng với 4 lớp nh&acirc;n vật để bạn lựa chọn.</span></p>
+<p class="p1"><span class="s1">Thời Đại Hiệp Sĩ l&agrave; tr&ograve; chơi trực tuyến đa nền tảng. Bạn c&oacute; thể chơi được tr&ecirc;n m&aacute;y t&iacute;nh PC Windows, iPhone, C&aacute;c d&ograve;ng m&aacute;y chạy hệ điều h&agrave;nh Android, Windows Phone, v&agrave; c&oacute; cả bản Java chạy tr&ecirc;n S40, S60 cũ của Nokia. Với chất lượng cao v&agrave; tốc độ mượt m&agrave; tr&ecirc;n c&aacute;c loại đường truyền mạng ADSL, 3G, GPRS.</span></p>
+<p class="p1"><span class="s1">Tr&ograve; chơi th&iacute;ch hợp với mọi lứa tuổi. Điều khiển trực tiếp nh&acirc;n vật rất dễ d&agrave;ng tr&ecirc;n m&agrave;n h&igrave;nh cảm ứng. Khi chơi tr&ecirc;n PC bạn chỉ cần d&ugrave;ng chuột, hoặc linh hoạt điều khiển nh&acirc;n vật với b&agrave;n ph&iacute;m cứng điện thoại Nokia S40, S60 cũ.</span></p>
+<p class="p2"><span class="s1">&nbsp;</span></p>
+<p style="text-align:center;font-size:24px;"><a style="color:red;" href="http://knightageonline.com/?c=skill">Danh sách các kỹ năng</a></p>
+<p class="p1"><span class="s1"><strong>CHỨC NĂNG CH&Iacute;NH</strong></span></p>
+<p class="p1"><span class="s1"><strong>1.Lớp nh&acirc;n vật:</strong>&nbsp;</span></p>
+<p class="p1"><span class="s1">Tr&ograve; chơi cung cấp 4 lớp nh&acirc;n vật ch&iacute;nh để bạn chọn lựa: Chiến Binh, Th&iacute;ch&nbsp; Kh&aacute;ch, Ph&aacute;p Sư v&agrave; Xạ Thủ. Mỗi lớp nh&acirc;n vật sẽ c&oacute; những thế mạnh đặc trưng kh&aacute;c nhau c&ugrave;ng với hệ thống vũ kh&iacute;, vật phẩm ri&ecirc;ng.</span></p>
+<p class="p2"><img src="http://knightageonline.com/images/pic/warriorx2.png" alt="" width="96" height="96" /></p>
+<p class="p1"><span class="s1"><strong>Chiến binh: </strong>l&agrave; những nh&acirc;n vật đại diện</span></p>
+<p class="p1"><span class="s1">cho sức mạnh v&agrave; thể lực phi thường.</span></p>
+<p class="p1"><span class="s1">Thuộc t&iacute;nh đặc trưng: hệ lửa.</span></p>
+<p class="p1"><span class="s1">Vũ kh&iacute; sửa dụng: Trọng kiếm</span></p>
+<p class="p2"><span class="s1">&nbsp;</span></p>
+<p class="p2"><span class="s1"><img src="http://knightageonline.com/images/pic/assassinx2.png" alt="" width="96" height="96" /><br /></span></p>
+<p class="p3"><span class="s1"><strong>Th&iacute;ch kh&aacute;ch</strong>: kết hợp giữa sức mạnh</span></p>
+<p class="p3"><span class="s1"><span> </span><span> </span><span> </span><span> </span>v&agrave; sự kh&eacute;o l&eacute;o trong chiến đấu.</span></p>
+<p class="p3"><span class="s1">Thuộc t&iacute;nh đặc trưng: độc tố</span></p>
+<p class="p3"><span class="s1"><span> </span><span> </span><span> </span><span> </span>Vũ kh&iacute; sử dụng: Đoản kiếm</span></p>
+<p class="p2"><span class="s1">&nbsp;</span></p>
+<p class="p2"><img src="http://knightageonline.com/images/pic/wizardx2.png" alt="" width="96" height="96" /></p>
+<p class="p2"><strong>Ph&aacute;p sư:</strong> đại diện cho sức mạnh tinh thần</p>
+<p class="p1"><span class="s1">v&agrave; thể lực chống chọi với b&atilde;o tố.</span></p>
+<p class="p1"><span class="s1">Thuộc t&iacute;nh đặc trưng: băng gi&aacute;</span></p>
+<p class="p1"><span class="s1">Vũ kh&iacute; sử dụng: Gậy ph&eacute;p</span></p>
+<p class="p2"><span class="s1">&nbsp;</span></p>
+<p class="p1"><img src="http://knightageonline.com/images/pic/hunterx2.png" alt="" width="96" height="96" /></p>
+<p class="p1"><span class="s1"><strong>Xạ thủ:</strong> c&oacute; khả năng vận dụng giữa</span></p>
+<p class="p1"><span class="s1"><span> </span><span> </span><span> </span><span> </span>Sức mạnh Tinh thần v&agrave; sự kh&eacute;o l&eacute;o.</span></p>
+<p class="p1"><span class="s1"><span> </span><span> </span><span> </span><span> </span>Thuộc t&iacute;nh đặc trưng: sấm s&eacute;t</span></p>
+<p class="p1"><span class="s1"><span> </span><span> </span><span> </span><span> </span>Vũ kh&iacute; sử dụng: S&uacute;ng trường</span></p>
+<p class="p2"><span class="s1">&nbsp;</span></p>
+<p class="p1"><span class="s1"><strong>2.Thế giới rộng lớn:</strong></span></p>
+<p class="p1"><span class="s1">Thời Đại Hiệp Sĩ bao gồm 3 thế giới lớn, địa h&igrave;nh đa dạng c&ugrave;ng với những v&ugrave;ng đất b&iacute; ẩn đang chờ bạn kh&aacute;m ph&aacute;.</span></p>
+<p class="p2" style="text-align: center;"><img src="http://knightageonline.com/images/pic/WorldMap.png" alt=""  /></p>
+<p class="p2" style="text-align: center;"><img src="http://knightageonline.com/images/pic/rungram.png" alt=""  /></p>
+<p class="p2" style="text-align: center;"><img src="http://knightageonline.com/images/pic/hangdong.png" alt=""  /></p>
+<p class="p2" style="text-align: center;"><img src="http://knightageonline.com/images/pic/bobien.png" alt="" /></p>
+<p class="p2" style="text-align: center;"><img src="http://knightageonline.com/images/pic/DamLay.png" alt="" /></p>
+<p class="p2" style="text-align: center;"><img src="http://knightageonline.com/images/pic/phetich.png" alt="" /></p>
+<p class="p1"><span class="s1"><strong>3.Hệ thống chiến đấu:</strong></span></p>
+<p class="p1"><span class="s1">Thuộc thể loại game nhập vai chặt ch&eacute;m đặc trưng, Thời Đại Hiệp Sĩ mang đến hệ thống chiến đấu đa dạng theo thuộc t&iacute;nh v&agrave; được ph&acirc;n chia từng nh&acirc;n vật. C&oacute; 5 loại thuộc t&iacute;nh bao gồm: S&aacute;t thương Vật l&yacute; &ndash; Băng &ndash; Lửa &ndash; Sấm s&eacute;t &ndash; Độc tố, ngo&agrave;i ra c&ograve;n c&oacute; th&ecirc;m những loại thuộc t&iacute;nh ẩn kh&aacute;c chưa được kh&aacute;m ph&aacute;.</span></p>
+<p class="p1"><span class="s1">Hệ thống <strong>điểm tiềm năng</strong> trong game bao gồm 4 loại: Sức mạnh (STR) &ndash; Kh&eacute;o l&eacute;o (DEX) &ndash; Thể lực (VIT) &ndash; Tinh thần (INT). Mỗi lớp nh&acirc;n vật c&oacute; thể tăng điểm tiềm năng theo 2 hướng:</span></p>
+<p class="p1"><span class="s1"><span> </span>+ Chiến binh: Sức mạnh &ndash; Thể lực</span></p>
+<p class="p1"><span class="s1"><span> </span>+ Th&iacute;ch kh&aacute;ch: Sức mạnh &ndash; Kh&eacute;o l&eacute;o</span></p>
+<p class="p1"><span class="s1"><span> </span>+ Ph&aacute;p sư: Tinh thần &ndash; Thể lực</span></p>
+<p class="p1"><span class="s1">+ Thợ săn: Tinh thần &ndash; Kh&eacute;o l&eacute;o</span></p>
+<p class="p2" style="text-align: center;"><span class="s1">&nbsp;<img src="http://knightageonline.com/images/pic/thongtin.png" alt="" /></span></p>
+<p class="p1"><span class="s1">Hệ thống <strong>kỹ năng chiến đấu</strong> đa dạng v&agrave; chia đều cho từng lớp nh&acirc;n vật:</span></p>
+<p class="p2" style="text-align: center;"><img src="http://knightageonline.com/images/pic/Skill.png" alt=""  /></p>
+<p class="p1"><span class="s1"><strong>4.Hệ thống vật phẩm:</strong>&nbsp;</span></p>
+<p class="p1"><span class="s1">Game cung cấp hệ thống vật phẩm rất đa dạng, bao gồm trang bị d&agrave;nh ri&ecirc;ng cho từng nh&acirc;n vật v&agrave; trang bị tự chọn. Cấp độ vật phẩm được chia theo m&agrave;u đặc trưng: <strong>Trắng &ndash; </strong></span><span class="s2"><strong>Xanh Dương</strong></span><span class="s1"><strong> &ndash; </strong></span><span class="s3"><strong>V&agrave;ng</strong></span><span class="s1"><strong> &ndash; </strong></span><span class="s4"><strong>T&iacute;m</strong></span><span class="s1"><strong> &ndash; </strong></span><span class="s5"><strong>Cam</strong></span><span class="s1">. Vật phẩm cấp c&agrave;ng cao sẽ c&oacute; những thuộc t&iacute;nh đặc biệt để kh&aacute;m ph&aacute;.</span></p>
+<p class="p2" style="text-align: center;"><img src="http://knightageonline.com/images/pic/Item.png" alt=""  /></p>
+<p class="p2" style="text-align: center;"><img src="http://knightageonline.com/images/pic/trangbi.png" alt="" /></p>
+<p class="p1"><strong><span class="s1">5.Hệ thống cốt truyện &ndash; Nhiệm vụ:</span></strong></p>
+<p class="p1"><span class="s1">Tr&ograve; chơi lấy bối cảnh thế giới hiệp sĩ giả tưởng v&agrave; mang phong c&aacute;ch Trung cổ. Trong đ&oacute; bạn sẽ h&oacute;a th&acirc;n th&agrave;nh một hiệp sĩ tập sự đi phi&ecirc;u lưu kh&aacute;m ph&aacute; thế giới, gặp gỡ những nh&acirc;n vật đặc biệt&hellip; Xuy&ecirc;n suốt c&acirc;u chuyện, bạn sẽ phải đi qua nhiều v&ugrave;ng đất kh&aacute;c nhau, kh&aacute;m ph&aacute; ra một &acirc;m mưu to lớn v&agrave; những thế lực hắc &aacute;m muốn hủy diệt thế giới.</span></p>
+<p class="p1"><span class="s1">C&oacute; hai loại nhiệm vụ trong game l&agrave; nhiệm vụ ch&iacute;nh v&agrave; nhiệm vụ tự chọn, bạn c&oacute; thể nhận nhiệm vụ bằng c&aacute;ch gi&uacute;p đỡ những nh&acirc;n vật trong game như l&agrave; một hiệp sĩ thực thụ vậy.</span></p>
+									</div>
+													
+                        </div>
+                        <br>
+                    </div><br>
+                </div>
+            	</div>
+            </div>
+            <div class="bg_tree"></div>
+            <div class="foot_bg">
+            
+            </div>
+           
+            <div class="left_b_bottom"><div class="right_b_bottom"><div class="footer" ><div class="left_bottom"></div><div class="right_bottom"></div></div></div></div>
+            <div class="copyright" style="color:#fff;margin-top: -39px;">
+			<br><br><br>
+
+			<a style="color:white" href="http://knightageonline.com/?c=noi-quy"><b></b></a><b>tophvn<br>
+Bản quyền thuộc về Gomobi</b></div>
+        </div>
+    </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+<script src="http://forum.knightageonline.com/js/jscanver.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+          
+		  const now = new Date();
+		  var minutes = now.getMinutes();
+		  if (minutes % 2 == 0){
+			//  snowEffectBind(1); 
+		  }else{
+			//  snowEffectBind(2); 
+		  } 
+			  });
+</script>
+<script type="text/javascript" language="javascript">
+    //Khởi tạo 1 số biến
+    var SCREEN_WIDTH = window.innerWidth;
+    var SCREEN_HEIGHT = window.innerHeight;
+    var container;
+    var particle;
+    var camera;
+    var scene;
+    var renderer;
+    var mouseX = 0;
+    var mouseY = 0;
+    var windowHalfX = window.innerWidth / 2;
+    var windowHalfY = window.innerHeight / 2;
+    var particles = [];
+	// var particleImage = new Image();
+    //     particleImage.src = 'https://forum.ngocrongonline.com/js/flow.png';
+    //     var particleImage2 = new Image();
+    // particleImage2.src = 'https://forum.ngocrongonline.com/js/211.png';
+    // var particleImage3 = new Image();
+    // particleImage3.src = 'https://forum.ngocrongonline.com/js/212.png';
+    // var particleImage4 = new Image();
+    // particleImage4.src = 'https://forum.ngocrongonline.com/js/213.png';
+    
+        function snowEffectBind(id) {
+            container = $('.snowEffect');
+    
+            camera = new THREE.PerspectiveCamera(75, SCREEN_WIDTH / SCREEN_HEIGHT, 1, 10000);
+            camera.position.z = 1000;
+    
+            scene = new THREE.Scene();
+            scene.add(camera);
+    
+            renderer = new THREE.CanvasRenderer();
+            renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+            if(id === 1){
+              var material = new THREE.ParticleBasicMaterial({ map: new THREE.Texture(particleImage) });
+          }else{
+              var material =  new THREE.ParticleBasicMaterial({ map: new THREE.Texture(particleImage2) });
+  
+          }
+    
+          if(id === 1){
+            var material = new THREE.ParticleBasicMaterial({ map: new THREE.Texture(particleImage) });
+            for (var i = 0; i < 35; i++) {
+            particle = new Particle3D(material);
+            particle.position.x = Math.random() * 2000 - 1000;
+            particle.position.y = Math.random() * 2000 - 1000;
+            particle.position.z = Math.random() * 2000 - 1000;
+            particle.scale.x = particle.scale.y = 1;
+            scene.add(particle);
+
+            particles.push(particle);
+        }
+        }else{
+            var material2 =  new THREE.ParticleBasicMaterial({ map: new THREE.Texture(particleImage2) });
+            var material3 =  new THREE.ParticleBasicMaterial({ map: new THREE.Texture(particleImage3) });
+            var material4 =  new THREE.ParticleBasicMaterial({ map: new THREE.Texture(particleImage4) });
+            for (var i = 0; i < 15; i++) {
+            particle = new Particle3D(material2);
+            particle.position.x = Math.random() * 2000 - 1000;
+            particle.position.y = Math.random() * 2000 - 1000;
+            particle.position.z = Math.random() * 2000 - 1000;
+            particle.scale.x = particle.scale.y = 1;
+            scene.add(particle);
+
+            particles.push(particle);
+            
+        }
+        for (var i = 0; i < 15; i++) {
+            particle = new Particle3D(material3);
+            particle.position.x = Math.random() * 2000 - 1000;
+            particle.position.y = Math.random() * 2000 - 1000;
+            particle.position.z = Math.random() * 2000 - 1000;
+            particle.scale.x = particle.scale.y = 1;
+            scene.add(particle);
+
+            particles.push(particle);
+            
+        }
+        for (var i = 0; i < 15; i++) {
+            particle = new Particle3D(material4);
+            particle.position.x = Math.random() * 2000 - 1000;
+            particle.position.y = Math.random() * 2000 - 1000;
+            particle.position.z = Math.random() * 2000 - 1000;
+            particle.scale.x = particle.scale.y = 1;
+            scene.add(particle);
+
+            particles.push(particle);
+            
+        }
+        }
+
+	
+
+        container.html(renderer.domElement);
+
+        document.addEventListener('mousemove', onDocumentMouseMove, false);
+        document.addEventListener('touchstart', onDocumentTouchStart, false);
+        document.addEventListener('touchmove', onDocumentTouchMove, false);
+
+        setInterval(loop, 1000 / 35);
+    }
+
+    function onDocumentMouseMove(event) {
+        mouseX = event.clientX - windowHalfX;
+        mouseY = event.clientY - windowHalfY;
+    }
+
+    function onDocumentTouchStart(event) {
+        if (event.touches.length == 1) {
+            event.preventDefault();
+
+            mouseX = event.touches[0].pageX - windowHalfX;
+            mouseY = event.touches[0].pageY - windowHalfY;
+        }
+    }
+
+    function onDocumentTouchMove(event) {
+        if (event.touches.length == 1) {
+            event.preventDefault();
+
+            mouseX = event.touches[0].pageX - windowHalfX;
+            mouseY = event.touches[0].pageY - windowHalfY;
+        }
+    }
+
+    function loop() {
+        for (var i = 0; i < particles.length; i++) {
+            var particle = particles[i];
+            particle.updatePhysics();
+
+            with (particle.position) {
+                if (y < -1000) y += 2000;
+                if (x > 1000) x -= 2000;
+                else if (x < -1000) x += 2000;
+                if (z > 1000) z -= 2000;
+                else if (z < -1000) z += 2000;
+            }
+        }
+
+        camera.position.x += (mouseX - camera.position.x) * 0.05;
+        camera.position.y += (-mouseY - camera.position.y) * 0.05;
+        camera.lookAt(scene.position);
+
+        renderer.render(scene, camera);
+    }
+</script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38084035-6', 'auto');
+  ga('send', 'pageview');
+
+  
+</script>
+<script src="https://pay.teamobi.com/hoamai.js" crossorigin="anonymous"></script>
+<script>
+		(function($) {
+
+			"use strict"
+
+			$(function() {
+				if ($('#backTop').length) {
+					var scrollTrigger = 10, // px
+						backToTop = function() {
+							var scrollTop = $(window).scrollTop();
+							if (scrollTop > scrollTrigger) {
+								$('#backTop').addClass('show');
+							} else {
+								$('#backTop').removeClass('show');
+							}
+						};
+					backToTop();
+					$(window).on('scroll', function() {
+						backToTop();
+					});
+					$('#backTop').on('click', function(e) {
+						e.preventDefault();
+						$('html,body').animate({
+							scrollTop: 0
+						}, 700);
+					});
+				}
+
+			});
+
+		})(jQuery);
+	</script>
+</body>
+
+</html>
